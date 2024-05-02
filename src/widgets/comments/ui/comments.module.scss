@@ -1,0 +1,45 @@
+.comments {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-left: 20px;
+
+  .comment {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    
+    .comment__header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 8px;
+      padding: 0;
+      span:nth-child(2){
+        color: gray;
+      }
+    }
+
+    .comment__text {
+      margin: 8px 0 0 0;
+      padding: 0;
+      width: 100%;
+      span {
+        font-size: 14px;
+        white-space: wrap;
+      }
+    }
+
+    .comment__expand {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 5px 0 0 5px; 
+      border-radius: 8px;
+      color: var(--vkui--color_text_subhead);
+    }
+  }
+
+}
